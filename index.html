@@ -2,7 +2,6 @@
 <html lang="ja">
 
 <head>
-  <title>くらうど。サービス終了</title>
   <style>
     body {
       background: -moz-linear-gradient(left, lightblue, #FFF);
@@ -72,7 +71,10 @@
     let url = new URL(window.location.href);
     let params = url.searchParams;
     document.getElementById("msg").innerText = params.get("msg");
-
+    
+    if (params.get("title") != undefined) {
+      document.title = params.get("title");
+    }
 
   </script>
 
