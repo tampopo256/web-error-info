@@ -65,7 +65,7 @@
   <script>
     let url = new URL(window.location.href);
     let params = url.searchParams;
-    urldoc = document.getElementById("msg")
+    urldoc = document.getElementById("url")
     
     urldoc.innerText = params.get("msg");
     urldoc.setAttribute('href', params.get("url"));
