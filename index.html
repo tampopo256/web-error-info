@@ -71,7 +71,7 @@
     let url = new URL(window.location.href);
     let params = url.searchParams;
     document.getElementById("msg").innerText = params.get("msg");
-    
+
     if (params.get("title") != undefined) {
       document.title = params.get("title");
     }
